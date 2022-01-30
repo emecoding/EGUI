@@ -145,86 +145,86 @@ EGUI/fast:
 	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/build
 .PHONY : EGUI/fast
 
-src/EGUI_Component.o: src/EGUI_Component.cpp.o
+EGUI_Component.o: EGUI_Component.cpp.o
 
-.PHONY : src/EGUI_Component.o
-
-# target to build an object file
-src/EGUI_Component.cpp.o:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o
-.PHONY : src/EGUI_Component.cpp.o
-
-src/EGUI_Component.i: src/EGUI_Component.cpp.i
-
-.PHONY : src/EGUI_Component.i
-
-# target to preprocess a source file
-src/EGUI_Component.cpp.i:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.i
-.PHONY : src/EGUI_Component.cpp.i
-
-src/EGUI_Component.s: src/EGUI_Component.cpp.s
-
-.PHONY : src/EGUI_Component.s
-
-# target to generate assembly for a file
-src/EGUI_Component.cpp.s:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.s
-.PHONY : src/EGUI_Component.cpp.s
-
-src/RenderWindow.o: src/RenderWindow.cpp.o
-
-.PHONY : src/RenderWindow.o
+.PHONY : EGUI_Component.o
 
 # target to build an object file
-src/RenderWindow.cpp.o:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o
-.PHONY : src/RenderWindow.cpp.o
+EGUI_Component.cpp.o:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/EGUI_Component.cpp.o
+.PHONY : EGUI_Component.cpp.o
 
-src/RenderWindow.i: src/RenderWindow.cpp.i
+EGUI_Component.i: EGUI_Component.cpp.i
 
-.PHONY : src/RenderWindow.i
+.PHONY : EGUI_Component.i
 
 # target to preprocess a source file
-src/RenderWindow.cpp.i:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/RenderWindow.cpp.i
-.PHONY : src/RenderWindow.cpp.i
+EGUI_Component.cpp.i:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/EGUI_Component.cpp.i
+.PHONY : EGUI_Component.cpp.i
 
-src/RenderWindow.s: src/RenderWindow.cpp.s
+EGUI_Component.s: EGUI_Component.cpp.s
 
-.PHONY : src/RenderWindow.s
+.PHONY : EGUI_Component.s
 
 # target to generate assembly for a file
-src/RenderWindow.cpp.s:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/RenderWindow.cpp.s
-.PHONY : src/RenderWindow.cpp.s
+EGUI_Component.cpp.s:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/EGUI_Component.cpp.s
+.PHONY : EGUI_Component.cpp.s
 
-src/main.o: src/main.cpp.o
+RenderWindow.o: RenderWindow.cpp.o
 
-.PHONY : src/main.o
+.PHONY : RenderWindow.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+RenderWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/RenderWindow.cpp.o
+.PHONY : RenderWindow.cpp.o
 
-src/main.i: src/main.cpp.i
+RenderWindow.i: RenderWindow.cpp.i
 
-.PHONY : src/main.i
+.PHONY : RenderWindow.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+RenderWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/RenderWindow.cpp.i
+.PHONY : RenderWindow.cpp.i
 
-src/main.s: src/main.cpp.s
+RenderWindow.s: RenderWindow.cpp.s
 
-.PHONY : src/main.s
+.PHONY : RenderWindow.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+RenderWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/RenderWindow.cpp.s
+.PHONY : RenderWindow.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -237,15 +237,15 @@ help:
 	@echo "... EGUI"
 	@echo "... package_source"
 	@echo "... package"
-	@echo "... src/EGUI_Component.o"
-	@echo "... src/EGUI_Component.i"
-	@echo "... src/EGUI_Component.s"
-	@echo "... src/RenderWindow.o"
-	@echo "... src/RenderWindow.i"
-	@echo "... src/RenderWindow.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... EGUI_Component.o"
+	@echo "... EGUI_Component.i"
+	@echo "... EGUI_Component.s"
+	@echo "... RenderWindow.o"
+	@echo "... RenderWindow.i"
+	@echo "... RenderWindow.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

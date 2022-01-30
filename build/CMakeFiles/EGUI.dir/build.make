@@ -57,90 +57,90 @@ include CMakeFiles/EGUI.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/EGUI.dir/flags.make
 
-CMakeFiles/EGUI.dir/src/main.cpp.o: CMakeFiles/EGUI.dir/flags.make
-CMakeFiles/EGUI.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EGUI.dir/src/main.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EGUI.dir/src/main.cpp.o -c /home/eme/c++/EGUI/src/main.cpp
+CMakeFiles/EGUI.dir/main.cpp.o: CMakeFiles/EGUI.dir/flags.make
+CMakeFiles/EGUI.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EGUI.dir/main.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EGUI.dir/main.cpp.o -c /home/eme/c++/EGUI/main.cpp
 
-CMakeFiles/EGUI.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EGUI.dir/src/main.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eme/c++/EGUI/src/main.cpp > CMakeFiles/EGUI.dir/src/main.cpp.i
+CMakeFiles/EGUI.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EGUI.dir/main.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eme/c++/EGUI/main.cpp > CMakeFiles/EGUI.dir/main.cpp.i
 
-CMakeFiles/EGUI.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EGUI.dir/src/main.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eme/c++/EGUI/src/main.cpp -o CMakeFiles/EGUI.dir/src/main.cpp.s
+CMakeFiles/EGUI.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EGUI.dir/main.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eme/c++/EGUI/main.cpp -o CMakeFiles/EGUI.dir/main.cpp.s
 
-CMakeFiles/EGUI.dir/src/main.cpp.o.requires:
+CMakeFiles/EGUI.dir/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/EGUI.dir/src/main.cpp.o.requires
+.PHONY : CMakeFiles/EGUI.dir/main.cpp.o.requires
 
-CMakeFiles/EGUI.dir/src/main.cpp.o.provides: CMakeFiles/EGUI.dir/src/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/main.cpp.o.provides.build
-.PHONY : CMakeFiles/EGUI.dir/src/main.cpp.o.provides
+CMakeFiles/EGUI.dir/main.cpp.o.provides: CMakeFiles/EGUI.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/EGUI.dir/main.cpp.o.provides
 
-CMakeFiles/EGUI.dir/src/main.cpp.o.provides.build: CMakeFiles/EGUI.dir/src/main.cpp.o
-
-
-CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o: CMakeFiles/EGUI.dir/flags.make
-CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o: ../src/EGUI_Component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o -c /home/eme/c++/EGUI/src/EGUI_Component.cpp
-
-CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eme/c++/EGUI/src/EGUI_Component.cpp > CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.i
-
-CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eme/c++/EGUI/src/EGUI_Component.cpp -o CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.s
-
-CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o.requires:
-
-.PHONY : CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o.requires
-
-CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o.provides: CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o.requires
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o.provides.build
-.PHONY : CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o.provides
-
-CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o.provides.build: CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o
+CMakeFiles/EGUI.dir/main.cpp.o.provides.build: CMakeFiles/EGUI.dir/main.cpp.o
 
 
-CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o: CMakeFiles/EGUI.dir/flags.make
-CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o: ../src/RenderWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o"
-	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o -c /home/eme/c++/EGUI/src/RenderWindow.cpp
+CMakeFiles/EGUI.dir/EGUI_Component.cpp.o: CMakeFiles/EGUI.dir/flags.make
+CMakeFiles/EGUI.dir/EGUI_Component.cpp.o: ../EGUI_Component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EGUI.dir/EGUI_Component.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EGUI.dir/EGUI_Component.cpp.o -c /home/eme/c++/EGUI/EGUI_Component.cpp
 
-CMakeFiles/EGUI.dir/src/RenderWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EGUI.dir/src/RenderWindow.cpp.i"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eme/c++/EGUI/src/RenderWindow.cpp > CMakeFiles/EGUI.dir/src/RenderWindow.cpp.i
+CMakeFiles/EGUI.dir/EGUI_Component.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EGUI.dir/EGUI_Component.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eme/c++/EGUI/EGUI_Component.cpp > CMakeFiles/EGUI.dir/EGUI_Component.cpp.i
 
-CMakeFiles/EGUI.dir/src/RenderWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EGUI.dir/src/RenderWindow.cpp.s"
-	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eme/c++/EGUI/src/RenderWindow.cpp -o CMakeFiles/EGUI.dir/src/RenderWindow.cpp.s
+CMakeFiles/EGUI.dir/EGUI_Component.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EGUI.dir/EGUI_Component.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eme/c++/EGUI/EGUI_Component.cpp -o CMakeFiles/EGUI.dir/EGUI_Component.cpp.s
 
-CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o.requires:
+CMakeFiles/EGUI.dir/EGUI_Component.cpp.o.requires:
 
-.PHONY : CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o.requires
+.PHONY : CMakeFiles/EGUI.dir/EGUI_Component.cpp.o.requires
 
-CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o.provides: CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o.requires
-	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o.provides.build
-.PHONY : CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o.provides
+CMakeFiles/EGUI.dir/EGUI_Component.cpp.o.provides: CMakeFiles/EGUI.dir/EGUI_Component.cpp.o.requires
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/EGUI_Component.cpp.o.provides.build
+.PHONY : CMakeFiles/EGUI.dir/EGUI_Component.cpp.o.provides
 
-CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o.provides.build: CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o
+CMakeFiles/EGUI.dir/EGUI_Component.cpp.o.provides.build: CMakeFiles/EGUI.dir/EGUI_Component.cpp.o
+
+
+CMakeFiles/EGUI.dir/RenderWindow.cpp.o: CMakeFiles/EGUI.dir/flags.make
+CMakeFiles/EGUI.dir/RenderWindow.cpp.o: ../RenderWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EGUI.dir/RenderWindow.cpp.o"
+	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/EGUI.dir/RenderWindow.cpp.o -c /home/eme/c++/EGUI/RenderWindow.cpp
+
+CMakeFiles/EGUI.dir/RenderWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EGUI.dir/RenderWindow.cpp.i"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eme/c++/EGUI/RenderWindow.cpp > CMakeFiles/EGUI.dir/RenderWindow.cpp.i
+
+CMakeFiles/EGUI.dir/RenderWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EGUI.dir/RenderWindow.cpp.s"
+	/usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eme/c++/EGUI/RenderWindow.cpp -o CMakeFiles/EGUI.dir/RenderWindow.cpp.s
+
+CMakeFiles/EGUI.dir/RenderWindow.cpp.o.requires:
+
+.PHONY : CMakeFiles/EGUI.dir/RenderWindow.cpp.o.requires
+
+CMakeFiles/EGUI.dir/RenderWindow.cpp.o.provides: CMakeFiles/EGUI.dir/RenderWindow.cpp.o.requires
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/RenderWindow.cpp.o.provides.build
+.PHONY : CMakeFiles/EGUI.dir/RenderWindow.cpp.o.provides
+
+CMakeFiles/EGUI.dir/RenderWindow.cpp.o.provides.build: CMakeFiles/EGUI.dir/RenderWindow.cpp.o
 
 
 # Object files for target EGUI
 EGUI_OBJECTS = \
-"CMakeFiles/EGUI.dir/src/main.cpp.o" \
-"CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o" \
-"CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o"
+"CMakeFiles/EGUI.dir/main.cpp.o" \
+"CMakeFiles/EGUI.dir/EGUI_Component.cpp.o" \
+"CMakeFiles/EGUI.dir/RenderWindow.cpp.o"
 
 # External object files for target EGUI
 EGUI_EXTERNAL_OBJECTS =
 
-EGUI: CMakeFiles/EGUI.dir/src/main.cpp.o
-EGUI: CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o
-EGUI: CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o
+EGUI: CMakeFiles/EGUI.dir/main.cpp.o
+EGUI: CMakeFiles/EGUI.dir/EGUI_Component.cpp.o
+EGUI: CMakeFiles/EGUI.dir/RenderWindow.cpp.o
 EGUI: CMakeFiles/EGUI.dir/build.make
 EGUI: CMakeFiles/EGUI.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable EGUI"
@@ -151,9 +151,9 @@ CMakeFiles/EGUI.dir/build: EGUI
 
 .PHONY : CMakeFiles/EGUI.dir/build
 
-CMakeFiles/EGUI.dir/requires: CMakeFiles/EGUI.dir/src/main.cpp.o.requires
-CMakeFiles/EGUI.dir/requires: CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o.requires
-CMakeFiles/EGUI.dir/requires: CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o.requires
+CMakeFiles/EGUI.dir/requires: CMakeFiles/EGUI.dir/main.cpp.o.requires
+CMakeFiles/EGUI.dir/requires: CMakeFiles/EGUI.dir/EGUI_Component.cpp.o.requires
+CMakeFiles/EGUI.dir/requires: CMakeFiles/EGUI.dir/RenderWindow.cpp.o.requires
 
 .PHONY : CMakeFiles/EGUI.dir/requires
 

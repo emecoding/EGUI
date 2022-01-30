@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/EGUI.dir/src/main.cpp.o"
-  "CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o"
-  "CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o"
+  "CMakeFiles/EGUI.dir/main.cpp.o"
+  "CMakeFiles/EGUI.dir/EGUI_Component.cpp.o"
+  "CMakeFiles/EGUI.dir/RenderWindow.cpp.o"
   "EGUI.pdb"
   "EGUI"
 )
