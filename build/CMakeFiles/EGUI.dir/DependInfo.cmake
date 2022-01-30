@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/eme/c++/EGUI/src/EGUI_Component.cpp" "/home/eme/c++/EGUI/build/CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o"
   "/home/eme/c++/EGUI/src/main.cpp" "/home/eme/c++/EGUI/build/CMakeFiles/EGUI.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

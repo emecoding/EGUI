@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/eme/c++/EGUI/build
 CMakeFiles/EGUI.dir/all:
 	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/depend
 	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=1,2 "Built target EGUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/eme/c++/EGUI/build/CMakeFiles --progress-num=1,2,3 "Built target EGUI"
 .PHONY : CMakeFiles/EGUI.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/EGUI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/EGUI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eme/c++/EGUI/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eme/c++/EGUI/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/EGUI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/eme/c++/EGUI/build/CMakeFiles 0
 .PHONY : CMakeFiles/EGUI.dir/rule

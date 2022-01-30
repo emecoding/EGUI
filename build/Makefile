@@ -145,6 +145,33 @@ EGUI/fast:
 	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/build
 .PHONY : EGUI/fast
 
+src/EGUI_Component.o: src/EGUI_Component.cpp.o
+
+.PHONY : src/EGUI_Component.o
+
+# target to build an object file
+src/EGUI_Component.cpp.o:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o
+.PHONY : src/EGUI_Component.cpp.o
+
+src/EGUI_Component.i: src/EGUI_Component.cpp.i
+
+.PHONY : src/EGUI_Component.i
+
+# target to preprocess a source file
+src/EGUI_Component.cpp.i:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.i
+.PHONY : src/EGUI_Component.cpp.i
+
+src/EGUI_Component.s: src/EGUI_Component.cpp.s
+
+.PHONY : src/EGUI_Component.s
+
+# target to generate assembly for a file
+src/EGUI_Component.cpp.s:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.s
+.PHONY : src/EGUI_Component.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -183,6 +210,9 @@ help:
 	@echo "... EGUI"
 	@echo "... package_source"
 	@echo "... package"
+	@echo "... src/EGUI_Component.o"
+	@echo "... src/EGUI_Component.i"
+	@echo "... src/EGUI_Component.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

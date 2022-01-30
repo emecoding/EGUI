@@ -1,5 +1,7 @@
 #include <iostream>
+#include "../include/all.hpp"
 
-int main(int, char**) {
-    std::cout << "Hello, world!\n";
+int main(int, char **)
+{
+    return all::init();
 }
