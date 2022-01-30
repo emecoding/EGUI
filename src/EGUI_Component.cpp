@@ -17,6 +17,24 @@ EGUI_Component::EGUI_Component(float x, float y, float width, float height, cons
     Content = content;
 }
 
+bool EGUI_Component::collides_with_mouse(int mouse_x, int mouse_y)
+{
+    if ((mouse_x >= dst.x && mouse_x <= dst.x + dst.w) && (mouse_y >= dst.y && mouse_y <= dst.y + dst.h))
+        return true;
+
+    return false;
+}
+
+void EGUI_Component::set_id(const char *id)
+{
+    this->Id = id;
+}
+
+void EGUI_Component::set_icon(SDL_Texture *icon)
+{
+    this->icon = icon;
+}
+
 void EGUI_Component::set_texture(SDL_Texture *tex)
 {
     texture = tex;

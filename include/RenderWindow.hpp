@@ -24,7 +24,7 @@ public:
 private:
     void create_window();
     void create_renderer();
-    void render_EGUI_Components();
+    void update_EGUI_Components(SDL_Event event);
     void display();
     void clear();
     void perform_delay();
@@ -36,6 +36,7 @@ private:
     bool can_poll_events();
 
     int calculate_time();
+    int mouse_x, mouse_y;
 
     inline float hire_time_in_seconds();
     const float time_step = 0.01;

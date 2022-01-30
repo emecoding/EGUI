@@ -46,12 +46,14 @@ int RenderWindow::main_loop(SDL_Event event)
         {
             if (event.type == SDL_QUIT)
                 return -1;
+            if (event.type == SDL_MOUSEMOTION)
+                SDL_GetMouseState(&mouse_x, &mouse_y);
         }
 
         accumulator -= time_step;
     }
     clear();
-    render_EGUI_Components();
+    update_EGUI_Components(event);
     display();
     components_to_blit.clear();
     perform_delay();
@@ -71,11 +73,11 @@ SDL_Texture *RenderWindow::load_texture(const char *file_path)
     return tex;
 }
 
-void RenderWindow::render_EGUI_Components()
+void RenderWindow::update_EGUI_Components(SDL_Event event)
 {
     for (EGUI_Component *component : components_to_blit)
     {
-        component->render(renderer);
+        component->update(renderer, event, mouse_x, mouse_y);
     }
 }
 

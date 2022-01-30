@@ -1,6 +1,11 @@
 #include <iostream>
 #include "../include/all.hpp"
 
+auto idk()
+{
+    std::cout << "PRESSED" << std::endl;
+}
+
 int main(int, char **)
 {
     if (all::init() != 0)
@@ -9,8 +14,9 @@ int main(int, char **)
     SDL_Event event;
 
     RenderWindow window(800, 600, "Window test");
-    Button b(100, 100, 100, 100, "Test Button");
-    b.set_texture(window.load_texture("../res/Icons/Add.png"));
+    Button b(100, 100, 32, 16, "Test Button");
+    b.set_texture(window.load_texture("../res/Textures/Button.png"));
+    //b.set_icon(window.load_texture("../res/Icons/Add.png"));
 
     int running = 0;
 
