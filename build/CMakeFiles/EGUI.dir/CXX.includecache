@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/eme/c++/EGUI/EGUI_Component.cpp
+/home/eme/c++/EGUI/include/Button.hpp
 EGUI_Component.hpp
-/home/eme/c++/EGUI/EGUI_Component.hpp
+/home/eme/c++/EGUI/include/EGUI_Component.hpp
 
-/home/eme/c++/EGUI/EGUI_Component.hpp
+/home/eme/c++/EGUI/include/EGUI_Component.hpp
 SDL2/SDL.h
 -
 SDL2/SDL_image.h
@@ -18,31 +18,43 @@ SDL2/SDL_image.h
 iostream
 -
 
-/home/eme/c++/EGUI/RenderWindow.cpp
-RenderWindow.hpp
-/home/eme/c++/EGUI/RenderWindow.hpp
-
-/home/eme/c++/EGUI/RenderWindow.hpp
+/home/eme/c++/EGUI/include/RenderWindow.hpp
 SDL2/SDL.h
 -
 SDL2/SDL_image.h
 -
 iostream
 -
+vector
+-
 EGUI_Component.hpp
-/home/eme/c++/EGUI/EGUI_Component.hpp
+/home/eme/c++/EGUI/include/EGUI_Component.hpp
 
-/home/eme/c++/EGUI/all.hpp
+/home/eme/c++/EGUI/include/all.hpp
 SDL2/SDL.h
 -
 SDL2/SDL_image.h
 -
 RenderWindow.hpp
-/home/eme/c++/EGUI/RenderWindow.hpp
+/home/eme/c++/EGUI/include/RenderWindow.hpp
+Button.hpp
+/home/eme/c++/EGUI/include/Button.hpp
 
-/home/eme/c++/EGUI/main.cpp
+/home/eme/c++/EGUI/src/Button.cpp
+../include/Button.hpp
+/home/eme/c++/EGUI/include/Button.hpp
+
+/home/eme/c++/EGUI/src/EGUI_Component.cpp
+../include/EGUI_Component.hpp
+/home/eme/c++/EGUI/include/EGUI_Component.hpp
+
+/home/eme/c++/EGUI/src/RenderWindow.cpp
+../include/RenderWindow.hpp
+/home/eme/c++/EGUI/include/RenderWindow.hpp
+
+/home/eme/c++/EGUI/src/main.cpp
 iostream
 -
-all.hpp
-/home/eme/c++/EGUI/all.hpp
+../include/all.hpp
+/home/eme/c++/EGUI/include/all.hpp
 

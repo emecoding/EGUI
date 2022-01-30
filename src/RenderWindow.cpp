@@ -1,4 +1,4 @@
-#include "RenderWindow.hpp"
+#include "../include/RenderWindow.hpp"
 
 RenderWindow::RenderWindow(float x, float y, float width, float height, const char *title) : EGUI_Component(x, y, width, height, title)
 {
@@ -38,26 +38,50 @@ void RenderWindow::create_renderer()
         std::cout << "Renderer failed to create... Error: " << SDL_GetError() << std::endl;
 }
 
-void RenderWindow::main_loop(SDL_Event event)
+int RenderWindow::main_loop(SDL_Event event)
 {
-    while (running)
+    while (can_poll_events())
     {
-        while (can_poll_events())
+        while (SDL_PollEvent(&event))
         {
-            while (SDL_PollEvent(&event))
-            {
-                if (event.type == SDL_QUIT)
-                    running = false;
-            }
-
-            accumulator -= time_step;
+            if (event.type == SDL_QUIT)
+                return -1;
         }
 
-        clear();
-        display();
-
-        perform_delay();
+        accumulator -= time_step;
     }
+    clear();
+    render_EGUI_Components();
+    display();
+    components_to_blit.clear();
+    perform_delay();
+
+    return 0;
+}
+
+SDL_Texture *RenderWindow::load_texture(const char *file_path)
+{
+    SDL_Texture *tex = NULL;
+    tex = IMG_LoadTexture(renderer, file_path);
+    if (tex == NULL)
+        std::cout << "Failed to load img: " << file_path << ". Error: " << SDL_GetError() << std::endl;
+    else
+        std::cout << "Loaded img: " << file_path << "." << std::endl;
+
+    return tex;
+}
+
+void RenderWindow::render_EGUI_Components()
+{
+    for (EGUI_Component *component : components_to_blit)
+    {
+        component->render(renderer);
+    }
+}
+
+void RenderWindow::blit(EGUI_Component *component)
+{
+    components_to_blit.push_back(component);
 }
 
 void RenderWindow::display()

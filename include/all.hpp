@@ -5,6 +5,7 @@
 #include <SDL2/SDL_image.h>
 
 #include "RenderWindow.hpp"
+#include "Button.hpp"
 
 namespace all
 {
