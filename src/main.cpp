@@ -3,5 +3,9 @@
 
 int main(int, char **)
 {
-    return all::init();
+    if (all::init() != 0)
+        return -1;
+
+    RenderWindow window(800, 600, "Window test");
+    return all::quit(window);
 }

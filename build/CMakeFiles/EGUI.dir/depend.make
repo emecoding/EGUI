@@ -4,6 +4,12 @@
 CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o: ../include/EGUI_Component.hpp
 CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o: ../src/EGUI_Component.cpp
 
+CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o: ../include/EGUI_Component.hpp
+CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o: ../include/RenderWindow.hpp
+CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o: ../src/RenderWindow.cpp
+
+CMakeFiles/EGUI.dir/src/main.cpp.o: ../include/EGUI_Component.hpp
+CMakeFiles/EGUI.dir/src/main.cpp.o: ../include/RenderWindow.hpp
 CMakeFiles/EGUI.dir/src/main.cpp.o: ../include/all.hpp
 CMakeFiles/EGUI.dir/src/main.cpp.o: ../src/main.cpp
 

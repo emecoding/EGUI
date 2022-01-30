@@ -2,6 +2,8 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
+#include "RenderWindow.hpp"
+
 namespace all
 {
     int init()
@@ -17,6 +19,13 @@ namespace all
             return -1;
         }
 
+        return 0;
+    }
+
+    int quit(RenderWindow window)
+    {
+        window.clean_up();
+        SDL_Quit();
         return 0;
     }
 };

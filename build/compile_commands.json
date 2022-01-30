@@ -8,5 +8,10 @@
   "directory": "/home/eme/c++/EGUI/build",
   "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o -c /home/eme/c++/EGUI/src/EGUI_Component.cpp",
   "file": "/home/eme/c++/EGUI/src/EGUI_Component.cpp"
+},
+{
+  "directory": "/home/eme/c++/EGUI/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -o CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o -c /home/eme/c++/EGUI/src/RenderWindow.cpp",
+  "file": "/home/eme/c++/EGUI/src/RenderWindow.cpp"
 }
 ]

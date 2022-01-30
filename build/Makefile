@@ -172,6 +172,33 @@ src/EGUI_Component.cpp.s:
 	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.s
 .PHONY : src/EGUI_Component.cpp.s
 
+src/RenderWindow.o: src/RenderWindow.cpp.o
+
+.PHONY : src/RenderWindow.o
+
+# target to build an object file
+src/RenderWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o
+.PHONY : src/RenderWindow.cpp.o
+
+src/RenderWindow.i: src/RenderWindow.cpp.i
+
+.PHONY : src/RenderWindow.i
+
+# target to preprocess a source file
+src/RenderWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/RenderWindow.cpp.i
+.PHONY : src/RenderWindow.cpp.i
+
+src/RenderWindow.s: src/RenderWindow.cpp.s
+
+.PHONY : src/RenderWindow.s
+
+# target to generate assembly for a file
+src/RenderWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/EGUI.dir/build.make CMakeFiles/EGUI.dir/src/RenderWindow.cpp.s
+.PHONY : src/RenderWindow.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -213,6 +240,9 @@ help:
 	@echo "... src/EGUI_Component.o"
 	@echo "... src/EGUI_Component.i"
 	@echo "... src/EGUI_Component.s"
+	@echo "... src/RenderWindow.o"
+	@echo "... src/RenderWindow.i"
+	@echo "... src/RenderWindow.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
