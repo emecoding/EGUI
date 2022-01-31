@@ -1,1 +1,1 @@
-/usr/bin/x86_64-linux-gnu-g++-7  -g  -rdynamic CMakeFiles/EGUI.dir/src/main.cpp.o CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o CMakeFiles/EGUI.dir/src/Button.cpp.o  -o EGUI -lSDL2main -lSDL2 -lSDL2_image 
+/usr/bin/x86_64-linux-gnu-g++-7  -g  -rdynamic CMakeFiles/EGUI.dir/src/main.cpp.o CMakeFiles/EGUI.dir/src/EGUI_Component.cpp.o CMakeFiles/EGUI.dir/src/RenderWindow.cpp.o CMakeFiles/EGUI.dir/src/Button.cpp.o  -o EGUI -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf 

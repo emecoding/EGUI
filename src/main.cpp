@@ -1,11 +1,6 @@
 #include <iostream>
 #include "../include/all.hpp"
 
-auto idk()
-{
-    std::cout << "PRESSED" << std::endl;
-}
-
 int main(int, char **)
 {
     if (all::init() != 0)
@@ -24,6 +19,11 @@ int main(int, char **)
     {
         window.blit(&b);
         running = window.main_loop(event);
+
+        if (b.is_right_clicked)
+            std::cout << "RIGHT CLICK" << std::endl;
+        if (b.is_left_clicked)
+            std::cout << "LEFT CLICK" << std::endl;
     }
 
     return all::quit(window);

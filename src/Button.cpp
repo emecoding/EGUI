@@ -3,10 +3,18 @@
 Button::Button(float x, float y, float width, float height, const char *content) : EGUI_Component(x, y, width, height, content)
 {
     update_rects();
+    this->set_text_color({0, 0, 0});
+    this->set_text_font(TTF_OpenFont("Sans.ttf", 24));
 }
 
 void EGUI_Component::update(SDL_Renderer *renderer, SDL_Event event, int mouse_x, int mouse_y)
 {
+    if (text_surface == NULL || text_texture == NULL)
+    {
+        std::cout << "SET" << std::endl;
+        set_surface(renderer);
+    }
+
     if (texture != NULL)
     {
         SDL_RenderCopy(renderer, texture, &src, &dst);

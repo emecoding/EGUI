@@ -52,3 +52,19 @@ void EGUI_Component::update_rects()
     dst.w = Width;
     dst.h = Height;
 }
+void EGUI_Component::set_text_color(SDL_Color color)
+{
+    this->text_color = color;
+}
+void EGUI_Component::set_text_font(TTF_Font *font)
+{
+    this->font = font;
+    (this->font == NULL ? std::cout << "FONT IS NULL" << std::endl : std::cout << "FONT IS NOT NULL" << std::endl);
+}
+
+void EGUI_Component::set_surface(SDL_Renderer *renderer)
+{
+    //(this->font == NULL ? std::cout << "FONT IS NULL" << std::endl : std::cout << "FONT IS NOT NULL" << std::endl);
+    text_surface = TTF_RenderText_Solid(this->font, this->Content, this->text_color);
+    text_texture = SDL_CreateTextureFromSurface(renderer, text_surface);
+}

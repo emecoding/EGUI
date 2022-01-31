@@ -3,6 +3,7 @@
 //EVERYTHING THAT USER CAN YOU, INCLUDE HERE!
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
 
 #include "RenderWindow.hpp"
 #include "Button.hpp"
@@ -21,6 +22,11 @@ namespace all
             std::cout << "IMG_Init failed... Error: " << SDL_GetError() << std::endl;
             return -1;
         }
+        if (TTF_Init() > 0)
+        {
+            std::cout << "TTF Failed to init... Error: " << SDL_GetError() << std::endl;
+            return -1;
+        }
 
         return 0;
     }
@@ -28,6 +34,7 @@ namespace all
     int quit(RenderWindow window)
     {
         window.clean_up();
+        TTF_Quit();
         SDL_Quit();
         return 0;
     }

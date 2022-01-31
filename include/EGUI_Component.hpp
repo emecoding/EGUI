@@ -1,6 +1,7 @@
 #pragma once
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <SDL2/SDL_ttf.h>
 #include <iostream>
 
 class EGUI_Component
@@ -14,6 +15,11 @@ public:
     void set_texture(SDL_Texture *tex);
     void set_icon(SDL_Texture *icon);
     void set_id(const char *ID);
+    void set_text_color(SDL_Color color);
+    void set_text_font(TTF_Font *font);
+
+    bool is_right_clicked = false;
+    bool is_left_clicked = false;
 
 protected:
     void update_rects();
@@ -30,6 +36,11 @@ protected:
     const char *Id;
 
     bool collides_with_mouse(int mouse_x, int mouse_y);
-    bool is_right_clicked = false;
-    bool is_left_clicked = false;
+
+    SDL_Color text_color;
+    SDL_Surface *text_surface = NULL;
+    SDL_Texture *text_texture = NULL;
+    TTF_Font *font = NULL;
+
+    void set_surface(SDL_Renderer *renderer);
 };
