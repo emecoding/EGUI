@@ -98,6 +98,10 @@ void RenderWindow::clear()
 
 void RenderWindow::clean_up()
 {
+    for (EGUI_Component *component : components_to_blit)
+    {
+        component->destroy();
+    }
     SDL_DestroyWindow(window);
 }
 

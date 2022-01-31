@@ -16,7 +16,9 @@ public:
     void set_icon(SDL_Texture *icon);
     void set_id(const char *ID);
     void set_text_color(SDL_Color color);
-    void set_text_font(TTF_Font *font);
+    void set_text_font(const char *file_path, int size);
+
+    void destroy();
 
     bool is_right_clicked = false;
     bool is_left_clicked = false;
@@ -26,11 +28,15 @@ protected:
 
     SDL_Rect src;
     SDL_Rect dst;
+    SDL_Rect text_src;
+    SDL_Rect text_dst;
 
     SDL_Texture *texture = NULL;
     SDL_Texture *icon = NULL;
 
     float X, Y, Width, Height;
+
+    int get_size_of_content();
 
     const char *Content;
     const char *Id;

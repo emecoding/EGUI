@@ -34,8 +34,8 @@ namespace all
     int quit(RenderWindow window)
     {
         window.clean_up();
-        TTF_Quit();
         SDL_Quit();
+        TTF_Quit();
         return 0;
     }
 }

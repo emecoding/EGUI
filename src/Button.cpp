@@ -3,15 +3,23 @@
 Button::Button(float x, float y, float width, float height, const char *content) : EGUI_Component(x, y, width, height, content)
 {
     update_rects();
-    this->set_text_color({0, 0, 0});
-    this->set_text_font(TTF_OpenFont("Sans.ttf", 24));
+    this->set_text_color({
+        255,
+        255,
+    });
+    this->set_text_font("../res/Fonts/SupermercadoOne-Regular.ttf", 10 * get_size_of_content());
+}
+
+void EGUI_Component::destroy()
+{
+    SDL_FreeSurface(text_surface);
+    SDL_DestroyTexture(text_texture);
 }
 
 void EGUI_Component::update(SDL_Renderer *renderer, SDL_Event event, int mouse_x, int mouse_y)
 {
     if (text_surface == NULL || text_texture == NULL)
     {
-        std::cout << "SET" << std::endl;
         set_surface(renderer);
     }
 
@@ -19,6 +27,9 @@ void EGUI_Component::update(SDL_Renderer *renderer, SDL_Event event, int mouse_x
     {
         SDL_RenderCopy(renderer, texture, &src, &dst);
     }
+    if (text_texture != NULL && text_surface != NULL)
+        SDL_RenderCopy(renderer, text_texture, &text_src, &text_dst);
+
     if (icon != NULL)
     {
         SDL_Rect icon_src = src;

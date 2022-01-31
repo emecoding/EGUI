@@ -51,20 +51,58 @@ void EGUI_Component::update_rects()
     dst.y = Y;
     dst.w = Width;
     dst.h = Height;
+
+    text_dst.x = 0;
+    text_dst.y = 0;
+    text_dst.w = 24 + (20 * get_size_of_content());
+    text_dst.h = 24;
+
+    text_dst.x = X;
+    text_dst.y = Y;
 }
 void EGUI_Component::set_text_color(SDL_Color color)
 {
     this->text_color = color;
 }
-void EGUI_Component::set_text_font(TTF_Font *font)
+void EGUI_Component::set_text_font(const char *file_path, int size)
 {
-    this->font = font;
-    (this->font == NULL ? std::cout << "FONT IS NULL" << std::endl : std::cout << "FONT IS NOT NULL" << std::endl);
+    text_src.w = size;
+    text_src.h = size;
+
+    if (this->font != NULL)
+    {
+        TTF_CloseFont(this->font);
+        this->font = NULL;
+    }
+
+    TTF_Font *f = NULL;
+    f = TTF_OpenFont(file_path, size);
+
+    if (f == NULL)
+        std::cout << "Failed to load font... Error: " << SDL_GetError() << std::endl;
+
+    this->font = f;
+
+    this->set_surface(NULL);
 }
 
 void EGUI_Component::set_surface(SDL_Renderer *renderer)
 {
-    //(this->font == NULL ? std::cout << "FONT IS NULL" << std::endl : std::cout << "FONT IS NOT NULL" << std::endl);
-    text_surface = TTF_RenderText_Solid(this->font, this->Content, this->text_color);
-    text_texture = SDL_CreateTextureFromSurface(renderer, text_surface);
+    if (this->font != NULL)
+    {
+        text_surface = NULL;
+        text_surface = TTF_RenderText_Solid(this->font, this->Content, this->text_color);
+    }
+
+    if (renderer != NULL)
+    {
+        text_texture = NULL;
+        text_texture = SDL_CreateTextureFromSurface(renderer, text_surface);
+    }
+}
+
+int EGUI_Component::get_size_of_content()
+{
+    size_t Size = strlen(this->Content);
+    return Size;
 }
